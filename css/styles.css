@@ -2,12 +2,13 @@
 
 :root {
   --bg-gray: #ddd;
+  --text-gray: #4a4a4a;
   --color-primary: #4d41c0;
   --white: #fff;
-  --text-gray: #4a4a4a;
 }
 
 * {
+  margin: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
@@ -23,7 +24,7 @@ h6 {
 
 html,
 body {
-  background: var(--bg-gray);
+  background-color: var(--bg-gray);
 }
 
 header {
@@ -66,12 +67,11 @@ a:hover {
 }
 
 #dsmovie-card-list {
-  padding: 130px 348px;
+  padding: 40px 0;
 }
 
 .dsmovie-card {
-  width: 260px;
-  height: 349px;
+  width: 100%;
 }
 
 .dsmovie-card img {
@@ -81,23 +81,26 @@ a:hover {
 
 .dsmovie-card-description {
   background-color: var(--white);
-  padding: 10px 0 20px 0;
+  padding: 10px 20px 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   border-radius: 0 0 8px 8px;
+  min-height: 150px;
 }
 
 .dsmovie-card-description h3 {
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .dsmovie-btn,
 .dsmovie-btn:hover {
-  height: 40px;
   width: 180px;
+  height: 40px;
   background-color: var(--color-primary);
   color: var(--white);
   font-size: 14px;
